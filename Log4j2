@@ -1,0 +1,56 @@
+Steps to add the Log4j2 Library in Framework
+Step1: Add the dependencies in pom.xml
+        1. log4j-core https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core
+        2. log4j-api  https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-api
+        
+Step2: Create the source folder in project with name src/main/resource
+
+Step3:    Add the log4j2.properties/log4j2.xml file in it 
+       [  property.filename=logs
+          appenders=file,console
+
+          appender.console.type=console
+          appender.console.name=STDOUT
+          appender.console.layout.type=PatternLayout
+          appender.console.layout.pattern= [%-5p] %d{yyyy-MM-dd HH:MM:SS} %c{1}:%L - %m%n
+
+          appender.file.type=File
+          appender.file.name=LOGFILE
+          appender.file.filename=${filename}/mylog.log
+          appender.file.layout.type=PatternLayout
+          appender.file.layout.pattern= [%-5p] %d{yyyy-MM-dd HH:MM:SS} %c{1}:%L - %m%n
+
+          loggers=file
+          logger.file.name=give the class name 
+          logger.file.level=all        [diff levels off/fatal/error/warn/info/debug/trace/all]
+          logger.file.appenderRefs=file
+          logger.file.appenderRef.file.ref=LOGFILE
+
+          rootLogger.level=all         [diff levels off/fatal/error/warn/info/debug/trace/all]
+          rootLogger.appenderRefs=stdout
+          rootLogger.appenderRef.stdout.ref=STDOUT
+       ]   
+       OR using log4j2.xml file
+       [
+          <Configuration>
+          <Appenders>
+          <Console name="STDOUT" target="SYSTEM_OUT">
+          <PatternLayout pattern="%d %-5p [%t] %C{2} (%F:%L) - %m%n"/>
+          </Console>
+          </Appenders>
+          <Loggers>
+          <Logger name="org.apache.log4j.xml" level="info"/>
+          <Root level="debug">
+          <AppenderRef ref="STDOUT"/>
+          </Root>
+          </Loggers>
+          </Configuration>
+        ]   
+       
+ Step4: Add the package in the class 
+        import package org.apache.logging.log4j.*;
+        
+ Step5: Create an object of teh Logger class 
+        Logger log=LogManager.getLogger("ClassName");
+        
+ Step6: use the object and log the messages in the project using diff methods.
