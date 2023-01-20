@@ -1,6 +1,6 @@
 Steps to add the ExtentReports Library in Project
 Step1:  Add the dependancy extentreports-cucumber7-adapter in pom.xml
-Step2:  Create the source folder with name src/main/resource
+Step2:  Create the source folder with name src/test/resource
 Step3:  Add the extent.properties file in the folder
       [ extent.reporter.spark.strat=true
         extent.reporter.spark.out=Reports/sparkreport.html
