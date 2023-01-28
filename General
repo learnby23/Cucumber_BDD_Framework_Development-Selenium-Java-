@@ -1,4 +1,14 @@
 Q.  What is Cucumber?
 Ans: The cucumber is a framework/tool which supports the implementation of BDD(Behaviour Driven Development).
+
 Q. What are the different BDD Tools in the Market?
 Ans: Cucumber, SpecFlow, Behave, Jasmine, JBehave etc...!!! 
+
+Q. What is BDD?
+Ans. BDD Stands for Behaviour Driven Development, IT supports the gherkin languages to writes test script in cucumber.
+     We can write the test scripts in easy steps using the keywords like Given, When, Then, And and But.
+     The Given keyword is used for the Precondition.
+     The When keyword is used to perform the action.
+     The Then keyword is used to verify 
+     The And keyword is used with When to add the multiple user actions AND
+     The But keyword is used for the negative testing.
