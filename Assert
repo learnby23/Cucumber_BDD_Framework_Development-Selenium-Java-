@@ -1,0 +1,13 @@
+Assert class in org.junit or org.testNG
+
+The Assert are used to put the verfication point in selenium test scripts.
+There are two types of asserts 1]Hard Assert(Assert) and 2]Soft Assert(verify)
+
+Hard Assert:
+If the Assert condition gets failed then it will not execute the remaining steps and get out of the loop.
+No need to create the object of the Assert class.
+
+Soft Assert:
+If the Assert condition gets failed then it will execute the remaining steps also.
+We need to create the object of the Soft Assert class.
+*[IMP] at last compulsory we need to provide the assertAll() method then only it will print the error.
