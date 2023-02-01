@@ -18,5 +18,9 @@ Steps:
 Steps: 
       1. Download the maven from official website https://maven.apache.org/download.cgi?. click on binary zip archieve
       2. Extract the folder and paste in the c: drive 
-      3. Set the environment variable
+      3. configure the path under environment variable
+      a.under system variables--new--M2_HOME--c:\apache-maven
+      b.under system variables--new--MAVEN_HOME--c:\apache-maven
+      
+      
       
