@@ -21,6 +21,8 @@ Steps:
       3. configure the path under environment variable
       a.under system variables--new--M2_HOME--c:\apache-maven
       b.under system variables--new--MAVEN_HOME--c:\apache-maven
-      
+      C.Go to the path--Edit--new-%M2_HOME%\bin and new-%MAVEN_HOME%
+      4.Open the CMD and change the directory to project location
+      5.mvn clean install/mvn test/mvn verify
       
       
