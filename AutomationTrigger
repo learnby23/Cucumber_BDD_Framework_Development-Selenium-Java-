@@ -1,0 +1,22 @@
+There are four ways to trigger the automation scripts:
+1.By using the pom.xml file
+2.By using the CLI
+3.By using the run.bat file
+4.By using the Jenkins
+
+1. By using the pom.xml file(maven-surefire-plugin and maven-compiler-plugin required)
+Steps:
+      1.Right click on the project-->Run As-->Maven clean //To clean the project
+      2.Right click on the project-->Run As-->Maven test  //To run the tests
+      OR
+      1.Right click on the project-->Run As-->Maven clean //To clean the project
+      2.Right click on the project-->Run As-->Maven install //To clean the project
+      OR
+      1.Right click on the project-->Run As-->Maven Build-->clean install-->Apply-->Run
+      
+2. By using the CLI
+Steps: 
+      1. Download the maven from official website https://maven.apache.org/download.cgi?. click on binary zip archieve
+      2. Extract the folder and paste in the c: drive 
+      3. Set the environment variable
+      
